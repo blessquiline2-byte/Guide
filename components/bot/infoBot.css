@@ -1,0 +1,50 @@
+.info-bot-container {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 120px;
+    height: 120px;
+    transform: scale(0);
+    transition: transform 0.5s ease-in-out;
+    z-index: 1000;
+  }
+  
+  .info-bot-container.visible {
+    transform: scale(1);
+  }
+  
+  .info-bot-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    object-fit: contain;
+ 
+  }
+  
+  .speech-bubble {
+    position: absolute;
+    bottom: 100%;
+    right: 50%;
+    transform: translateX(50%);
+    background-color: #ffffff;
+    color: #333;
+    padding: 10px 14px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    white-space: nowrap;
+  }
+  
+  .speech-arrow {
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #ffffff;
+  }
+  
